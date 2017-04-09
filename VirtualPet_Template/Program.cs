@@ -15,8 +15,13 @@ namespace VirtualPet_Template
 
 
             //TODO add a greeting for the user. you can also let the user name the pet if you like
+            
+        
+            Console.WriteLine("Hello, thank you for taking care of Ezra!");
+            Console.WriteLine();
 
-            int selectedOption;
+        
+        int selectedOption;
 
             do
             {
@@ -29,6 +34,7 @@ namespace VirtualPet_Template
                 Console.WriteLine("4. Play with them"); //decreases boredom
                 Console.WriteLine("5. Tell the pet about your day"); //increases social need
                 Console.WriteLine("6. Quit"); //ends the game
+                Console.WriteLine();
                 
 
 
@@ -56,7 +62,7 @@ namespace VirtualPet_Template
                         break;
                     case 4:
 
-                        myPet.BoredomeDecrease();
+                        myPet.BoredomDecrease();
                         Console.WriteLine("Wow, your pet sure is having fun");
                         break;
                     case 5:
@@ -66,12 +72,12 @@ namespace VirtualPet_Template
                         break;
                     case 6:
 
-                        Console.WriteLine("Thank you for playing.");
+                        Console.WriteLine("Come back any time!");
                         break;
 
                     default:
 
-                        Console.WriteLine("Invalid option selected.");
+                        Console.WriteLine("Yikes! You chose to do nothing with that invalid option...");
                         break;
                 }
 
