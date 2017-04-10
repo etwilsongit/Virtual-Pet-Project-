@@ -15,8 +15,6 @@ namespace VirtualPet_Template
 
 
             //greet the user here
-            
-        
             Console.WriteLine("Hello, thank you for taking care of Ezra!");
             Console.WriteLine();
 
@@ -44,7 +42,7 @@ namespace VirtualPet_Template
 
                 switch (selectedOption)
                 {
-                    //these switch
+                    //when the user selects options, these switch cases change the stats
                     case 1:
 
                         myPet.HungerDecrease();
@@ -81,8 +79,6 @@ namespace VirtualPet_Template
                         break;
                 }
 
-                //TODO We can put method calls here so the pet can have some values change automatically
-                //Feel free to add, remove, or modify which methods are called here
                 myPet.HungerIncrease();
                 myPet.SocialDecrease();
                 myPet.ThirstIncrease();

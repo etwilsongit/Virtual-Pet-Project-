@@ -9,7 +9,7 @@ namespace VirtualPet_Template
 
     class VirtualPet
     {
-        //
+        
         private string name;
         private int hunger;
         private int intel;
@@ -86,9 +86,6 @@ namespace VirtualPet_Template
             this.social = social - 3;
         }
 
-        //TODO we need to add more methods to modify the other fields
-
-
         //method for stats of virtual pet
         public void MyPetStatus()
         {
@@ -101,7 +98,6 @@ namespace VirtualPet_Template
             Console.WriteLine("Boredom: " + boredom);
             Console.WriteLine("Social: " + social);
             Console.WriteLine();
-            //TODO account for more fields
         }
     }
 }
