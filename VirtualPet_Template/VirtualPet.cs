@@ -9,7 +9,7 @@ namespace VirtualPet_Template
 
     class VirtualPet
     {
-        //We're setting our fields to private here so only the VirtualPet class can modify them directly
+        //
         private string name;
         private int hunger;
         private int intel;
@@ -17,9 +17,7 @@ namespace VirtualPet_Template
         private int boredom;
         private int social;
 
-        //TODO fill in more fields
 
-        //this defaut constructor is sets options without giving us any options
         public VirtualPet()
         {
             this.name = "Ezra";
@@ -28,10 +26,8 @@ namespace VirtualPet_Template
             this.thirst = 20;
             this.boredom = 40;
             this.social = 30;
-        //TODO account for more fields
-    }
+        }
 
-        //TODO how can we set things with our construtor
         public VirtualPet(string name, int hunger, int sick, int boredom, int thirst, int intel, int social)
         {
             this.name = name;
@@ -97,7 +93,8 @@ namespace VirtualPet_Template
         public void MyPetStatus()
         {
             Console.WriteLine();
-            Console.WriteLine(name);
+            Console.WriteLine("Let's take a look at Ezra's stats!");
+            Console.WriteLine();
             Console.WriteLine("Hunger: " + hunger);
             Console.WriteLine("Intelligence: " + intel);
             Console.WriteLine("Thirst: " + thirst);

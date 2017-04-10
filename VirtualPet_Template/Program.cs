@@ -10,11 +10,11 @@ namespace VirtualPet_Template
     {
         static void Main(string[] args)
         {
-            //this is how we instantiate a new instance of our pet
+            //new instance of the pet
             VirtualPet myPet = new VirtualPet();
 
 
-            //TODO add a greeting for the user. you can also let the user name the pet if you like
+            //greet the user here
             
         
             Console.WriteLine("Hello, thank you for taking care of Ezra!");
@@ -25,9 +25,9 @@ namespace VirtualPet_Template
 
             do
             {
-                //TODO fill this out with more options to interact with the pet
+                //these are the pet interactions
                 Console.WriteLine();
-                Console.WriteLine("Please select an option");
+                Console.WriteLine("What would you like to do today?");
                 Console.WriteLine("1. Feed the pet"); //decreases hunger
                 Console.WriteLine("2. Train the pet"); //increases intelligence 
                 Console.WriteLine("3. Give them water"); //decreases thirst
@@ -44,7 +44,7 @@ namespace VirtualPet_Template
 
                 switch (selectedOption)
                 {
-                    //when the user selects option one we feed the pet
+                    //these switch
                     case 1:
 
                         myPet.HungerDecrease();
@@ -84,6 +84,10 @@ namespace VirtualPet_Template
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
                 myPet.HungerIncrease();
+                myPet.SocialDecrease();
+                myPet.ThirstIncrease();
+                myPet.BoredomIncrease();
+                
 
             } while (selectedOption != 6);
 
