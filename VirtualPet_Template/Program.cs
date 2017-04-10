@@ -46,31 +46,31 @@ namespace VirtualPet_Template
                     case 1:
 
                         myPet.HungerDecrease();
-                        Console.WriteLine("Thank you for feeding the pet");
+                        Console.WriteLine("Thank you for feeding Ezra!");
                         break;
                     case 2:
 
                         myPet.IntelIncrease();
-                        Console.WriteLine("Your pet can now do new tricks!");
+                        Console.WriteLine("Ezra can now do new tricks!");
                         break;
                     case 3:
 
                         myPet.ThirstDecrease();
-                        Console.WriteLine("Thank you for keeping them hydrated!");
+                        Console.WriteLine("Thank you for keeping Ezra hydrated!");
                         break;
                     case 4:
 
                         myPet.BoredomDecrease();
-                        Console.WriteLine("Wow, your pet sure is having fun");
+                        Console.WriteLine("Wow, Ezra sure is having fun!");
                         break;
                     case 5:
 
                         myPet.SocialIncrease();
-                        Console.WriteLine("They certainly found your day interesting!");
+                        Console.WriteLine("Ezra certainly found your day interesting!");
                         break;
                     case 6:
 
-                        Console.WriteLine("Come back any time!");
+                        Console.WriteLine("Come back any time! (^_^)\"/\"");
                         break;
 
                     default:
